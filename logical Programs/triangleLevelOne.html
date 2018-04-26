@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="output"></p>
+        <script>
+            var para = document.getElementById('output');
+            function halfTriangle(num) {
+                for(var i = 1; i <= num;i++) {
+                    var result = '';
+                    for(var j = 0;j < i;j++) {
+                       result += '* ';
+                    }
+                     para.innerHTML +=  result + '<br>';
+                    console.log(result);
+                }
+            }
+
+            halfTriangle(7);            
+            
+        </script>    
+    </body>
+</html>

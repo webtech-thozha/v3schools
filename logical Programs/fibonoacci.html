@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="output"></p>
+        <script>
+            var para = document.getElementById('output');
+            function fib(num) {
+                var x = 0, y = 1, z;
+                if(num >= 1) {
+                    para.innerHTML = '&nbsp' + x + '<br>';
+                    console.log(x);
+                }
+                if(num >=2) {
+                    para.innerHTML += '&nbsp' + y + '<br>';
+                    console.log(y);
+                }
+                for(var i = 2;i < num;i++) {
+                    z = x + y;
+                    para.innerHTML += '&nbsp' + z + '<br>';
+                    console.log(z);
+                    x = y;
+                    y = z;
+                }
+            }
+
+            fib(10);
+
+
+        </script>    
+    </body>
+</html>

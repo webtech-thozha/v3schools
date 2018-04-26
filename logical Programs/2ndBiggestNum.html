@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h3 id="bignum" ></h3>
+        <h3 id="secbignum"></h3>
+        <script>
+            var list = [12, 4, 7, 23, 44, 35, 13];
+            var bigg = 0, secB = 0;
+            for(var i = 1;i < list.length;i++) {
+               if(bigg < list[i]) {
+                   secB = bigg;
+                   bigg = list[i]; 
+               } else if(secB < list[i]){
+                   secB = list[i];
+               }
+            }
+            document.getElementById('bignum').innerText = 'Biggest num = ' + bigg;
+            document.getElementById('secbignum').innerText = '2nd Biggest num = ' + secB;
+            console.log('Biggest num = ' + bigg );
+            console.log('2nd Biggest num = ' + secB );
+        </script>    
+    </body>
+</html>

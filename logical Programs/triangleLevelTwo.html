@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="output"></p>
+        <script>
+            var para = document.getElementById('output');
+            function triangle(num) {
+                for(var i = 1;i <= num;i++) {
+                    var result = '';
+                    for(var j = num;j > i;j--) {
+                        //result += ' ';
+                        result += '&nbsp';
+                    }
+                    for(var k = 0;k < i;k++) {
+                        result += '* ';
+                    }     
+                    para.innerHTML +=  result + '<br>';
+                    console.log(result);                                   
+                }                                                                                                
+            }
+
+            triangle(8);            
+            
+        </script>    
+    </body>
+</html>

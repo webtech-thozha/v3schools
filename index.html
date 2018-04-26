@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type = "text/css"  href="style/home.css">
+</head>        
+<body>
+    <div id="header" onchange="app.changeContent()">
+        <select id="program-list">
+        </select>
+        <h2 id="title" >v3schools.com</h2>
+    </div>    
+    <div id="content">
+        <div id="toolbox">
+            <button id="run" onclick="app.runCode()">Run</button>
+        </div>
+        <textarea id="code" rows="30" cols="80"></textarea>
+        <iframe id="output" width="650" height="450"></iframe>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/script.js" type="application/javascript"></script>
+</body>    
+</html>
